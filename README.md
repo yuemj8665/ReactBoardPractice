@@ -25,6 +25,31 @@
     이런 사소한 실수가 없어야 속도가 빨라질 것.
     앞으로는 주의해서 코딩 해야겠다.
 
+####4.2.1. App5.js 글 타이틀 클릭 시 에러(2)
+    App5.handleSelectRow
+    C:/Users/MJMJ/react_board/src/App5.js:47
+    44 |      })
+    45 |  }
+    46 |  handleSelectRow = (row) => {
+    > 47 |      this.child.current.handleSelectRow(row);
+        | ^  48 | }
+    49 |  
+    50 |  render() {
+    View compiled
+    BoardItem.handleSelectRow
+    C:/Users/MJMJ/react_board/src/App5.js:82
+    79 |    }
+    80 |    handleSelectRow = () => {
+    81 |        const { row, onSelectRow } = this.props;
+    > 82 |        onSelectRow(row);
+        | ^  83 |    }
+    84 | 
+    85 |    render() {
+    View compiled
+####4.2.2 에러 해결 방법
+    2021-05-20... 아직 해결 못함. 깃허브에 있는거 그대로 집어넣었는데도 문제가 있다.
+
+
 
 
 
